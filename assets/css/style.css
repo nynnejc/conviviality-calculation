@@ -165,16 +165,9 @@ body {
   background-image: radial-gradient(
     circle at 1px 1px,
     #39ff14 2px,
-    transparent 0  );
-  background-size: 40px 40px;
-
-  background: rgb(250, 246, 246);
-  background: linear-gradient(
-    0deg,
-    rgba(250, 246, 246, 1) 0%,
-    rgba(253, 45, 182, 0.14049369747899154) 100%,
-    z-index 1
+    transparent 0
   );
+  background-size: 40px 40px;
 }
 
 .navbar {
