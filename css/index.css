@@ -185,8 +185,16 @@ body {
 
 
 .navbar :hover {
-  color: blue;
+  color: #d3b2e0;
   text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 4%;
+  margin-bottom: 3%;
 }
 
 .block {
@@ -199,27 +207,9 @@ body {
   margin-left: 3%;
   margin-top: 8%;
   text-decoration: none;
-}
-
-.block h2 a {
-  color: #000;
-  text-decoration: none;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.block h2 a:hover {
-  color: #26867c;
-  text-decoration: none;
-}
-
-h2 {
-  font-family: monospace;
-  font-size: 26px;
-  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
 }
 
 .section {
