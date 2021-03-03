@@ -162,12 +162,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
 
-  background-image: radial-gradient(
-    circle at 1px 1px,
-    #39ff14 2px,
-    transparent 0
-  );
-  background-size: 40px 40px;
+  background-color: #d8bbcd;
 }
 
 .navbar {
@@ -190,34 +185,7 @@ body {
 }
 
 .navbar a:hover {
-  color: #d3b2e0;
-  text-decoration: none;
-}
-
-.block {
-  font-family: monospace;
-  color: #000;
-  font-size: 18px;
-  text-align: left;
-  margin: 0 auto;
-  margin-right: 3%;
-  margin-left: 3%;
-  margin-top: 8%;
-  text-decoration: none;
-}
-
-.block h2 a {
-  color: #000;
-  text-decoration: none;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.block h2 a:hover {
-  color: #26867c;
+  color: #008161;
   text-decoration: none;
 }
 
@@ -227,28 +195,21 @@ h2 {
   font-weight: 500;
 }
 
-.section {
-  margin-top: 3%;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4%;
   margin-bottom: 3%;
 }
 
-a.link1 {
-  color: #808080;
-  text-decoration: none;
-}
-a:hover.link1 {
-  color: #39ff14;
-  text-decoration: none;
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2%;
+
 }
 
-a.link2 {
-  color: #808080;
-  text-decoration: none;
-}
-a:hover.link2 {
-  color: #ff99ff;
-  text-decoration: none;
-}
 
 .copyright-name-date {
   text-align: left;
@@ -260,4 +221,43 @@ a:hover.link2 {
 
 footer {
   margin-top: auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 300vh;
+  background-color: rgb(255, 255, 255);
+  animation: body 1s linear;
+}
+@keyframes body {
+  to {
+    background-color: rgb(240, 197, 239);
+  }
+}
+
+.progress {
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    background-color: rgb(240, 197, 239);
+    width: 100%;
+  }
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
 }
