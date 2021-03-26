@@ -162,12 +162,12 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
 
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle at 1px 1px,
     #39ff14 2px,
     transparent 0
   );
-  background-size: 40px 40px;
+  background-size: 40px 40px; */
 }
 
 .Navbar {
@@ -181,14 +181,14 @@ body {
   margin-right: 3%;
 }
 .Navbar :hover {
-  color: red;
+  color: #6c9380;
 }
 
 .Navbar a {
   text-decoration: none;
-  color: red;
+  color: #6c9380;
   color: transparent;
-  text-shadow: 0 0 5px red;
+  text-shadow: 0 0 5px #6c9380;
 }
 
 .Navbar__Items {
