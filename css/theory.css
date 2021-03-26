@@ -181,14 +181,14 @@ body {
   margin-right: 3%;
 }
 .Navbar :hover {
-  color: #d3b2e0;
+  color: #fd6631;
 }
 
 .Navbar a {
-  color: #d3b2e0;
-  color: transparent;
   text-decoration: none;
-  text-shadow: 0 0 5px #d3b2e0;
+  color: #fd6631;
+  color: transparent;
+  text-shadow: 0 0 5px #fd6631;
 }
 
 .Navbar__Items {
