@@ -212,6 +212,11 @@ flex: 0 0 auto;
   margin-right: 3%;
 }
 
+.edit-picture {
+  margin: auto;
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
   .Navbar__Items,
   .Navbar {
@@ -271,6 +276,10 @@ a.link2 {
 a:hover.link2 {
   color: #ff99ff;
   text-decoration: none;
+}
+.edit-picture {
+  display: flex;
+  justify-content: center;
 }
 
 .copyright-name-date {
